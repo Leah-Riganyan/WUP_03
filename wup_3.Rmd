@@ -17,6 +17,8 @@ davisdata <- read.csv(file="UCDavis.csv")
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
+
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
@@ -34,6 +36,8 @@ basicCN + geom_boxplot()
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+   
+The plots look as though there is a difference between amount of alcohol consumed, mainly that the back seats will consume much more than the middle and front seats, who are nearly equal in amount.
 
 ## Numerical Summarys 
 
