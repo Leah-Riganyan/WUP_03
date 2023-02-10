@@ -49,6 +49,13 @@ people in the back will drink ~9 drinks, three time more than the middle, and ni
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+   
+If there wasn't a difference between all the seats and their alcohol consumption, then the likelihood that this result would happen is .000116.
+
 ## Conclusions
 
 
