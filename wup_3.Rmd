@@ -56,6 +56,15 @@ summary.aov(model1)
    
 If there wasn't a difference between all the seats and their alcohol consumption, then the likelihood that this result would happen is .000116.
 
+## Tukey Test
+
+```{r}
+plot(TukeyHSD(model1))
+```
+   
+This test shows us there's not a difference between middle and front seats. The difference stems from the back seats, whose confidence interval doesn't cross the 0 line in any other seat position. 
+
+
 ## Conclusions
-
-
+   
+We can conclude from these results that people who sit in the back are far more likely to consume copious amounts of alcohol than the middle or front seats. The difference between the front seats and the middle seats are 1-3 drinks, while the difference between the back seats differ by 6-9.
